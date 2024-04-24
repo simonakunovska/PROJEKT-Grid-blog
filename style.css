@@ -66,3 +66,9 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+.blog{
+	display:grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	justify-content:center;
+	margin:0 auto;
+}

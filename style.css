@@ -83,7 +83,7 @@ header{
 	grid-column:2/3;
 	
 	display:flex;
-flex-direction:column;
+	flex-direction:column;
 	color: var(--limetka);
 	justify-content:center;
 }
@@ -112,16 +112,12 @@ h1{
 
 }
 
-.tip-vpravo {background-color: var(--svetla);
+.tip-vpravo {
+	background-color: var(--svetla);
 	display: inline-block;
 	border-left: 3px solid var(--zluta); 
 	padding-left:15px;
 	height: fit-content;
-}
-
-
-tip a {
-	color:var(--oranzova)
 }
 
 
@@ -205,4 +201,8 @@ article p {
 
 .tip a{
 	color:var(--oranzova);
+}
+
+.tip p{
+	margin:10px;
 }

@@ -89,7 +89,8 @@ flex-direction:column;
 }
 
 h1{
-	text-align:center;
+	
+	font-size:80px;
 	
 }
 .meta{
@@ -100,11 +101,32 @@ h1{
 
 .tip-vlevo{
 	grid-column:1/2;
-	background-color: var(--tmava);
-	
+	background-color: var(--svetla);
+	padding: 10px;
+	display: inline-block;
+	border-right: 3px solid var(--zluta); 
+	text-align:right;
+	padding-right:15px;
+	height: fit-content;
     
 
 }
+
+.tip-vpravo {background-color: var(--svetla);
+	display: inline-block;
+	border-left: 3px solid var(--zluta); 
+	padding-left:15px;
+	height: fit-content;
+}
+
+
+tip a {
+	color:var(--oranzova)
+}
+
+
+
+
 
 p{
 	grid-column:2/3;
@@ -117,23 +139,70 @@ figure{
 
 img{
 	width:100%;
+	margin:0;
 }
 
 blockquote{
 	grid-column:-1/1;
 	justify-self:center;
 	color: var(--seda);
+	font-size:35px;
+	position:relative;
+	text-align: center;
 }
 
 h2{
 	grid-column:2/3;
+	color: var(--limetka);
+	font-size:45px;
 }
 
 footer{
 	grid-column:2/3;
 	color: var(--seda);
+	
 }
+
+
+footer a {
+	text-decoration: none; 
+	color: inherit; 
+  }
 
 figcaption{
 	color: var(--seda);
+}
+
+
+blockquote::before{
+	content:"";
+	display:block;
+	width:130px;
+	height:5px;
+	background-color:var(--zelena);
+	margin-bottom:25px;
+	position: absolute;
+  	top: -40px;
+  	left: 250px;
+	
+}
+blockquote::after{
+	content:"";
+	display:block;
+	width:130px;
+	height:5px;
+	background-color:var(--zelena);
+	margin-top:25px;
+	position: absolute; 
+  	bottom: -45px;
+  	left: 250px;
+	
+}
+
+article p {
+	margin:0px;
+}
+
+.tip a{
+	color:var(--oranzova);
 }
